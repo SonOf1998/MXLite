@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MXLite</string>
+    <string name="open_file">Open File</string>
+    <string name="settings">Settings</string>
+    <string name="recent">Recent</string>
+    <string name="all_files">All files</string>
+    <string name="SwitchingThemeWarning">Switching theme requires restart!</string>
+    <string name="restart">RESTART</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="no_recent_videos">No recent videos..</string>
+    <string name="no_mp4_files_could_be_found">No .mp4 files could be found in the device memory!\nTry refreshing from time to time!</string>
+    <string name="stopped_at">Stopped at:</string>
+    <string name="brightness">Brightness</string>
+    <string name="volume">Volume</string>
+</resources>

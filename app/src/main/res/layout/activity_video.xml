@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".VideoActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/pvVideoPlayer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        app:controller_layout_id="@layout/exo_control_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:show_timeout="2000" />
+
+
+
+    <View
+        android:id="@+id/vBrightnessSlider"
+        android:background="@android:color/transparent"
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="170dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvBrightnessLabel"
+        android:text="@string/brightness"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/vBrightnessSlider"
+        app:layout_constraintLeft_toLeftOf="@id/vBrightnessSlider"
+        app:layout_constraintRight_toRightOf="@id/vBrightnessSlider"/>
+    
+    <TextView
+        android:id="@+id/tvBrightness"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        tools:text="10%"
+        app:layout_constraintBottom_toTopOf="@id/vBrightnessSlider"
+        app:layout_constraintLeft_toLeftOf="@id/vBrightnessSlider"
+        app:layout_constraintRight_toRightOf="@id/vBrightnessSlider"/>
+
+
+
+
+
+
+    <View
+        android:id="@+id/vVolumeSlider"
+        android:background="@android:color/transparent"
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="170dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvVolumeLabel"
+        android:text="@string/volume"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/vVolumeSlider"
+        app:layout_constraintLeft_toLeftOf="@id/vVolumeSlider"
+        app:layout_constraintRight_toRightOf="@id/vVolumeSlider"/>
+
+    <TextView
+        android:id="@+id/tvVolume"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        tools:text="10%"
+        app:layout_constraintBottom_toTopOf="@id/vVolumeSlider"
+        app:layout_constraintLeft_toLeftOf="@id/vVolumeSlider"
+        app:layout_constraintRight_toRightOf="@id/vVolumeSlider"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
